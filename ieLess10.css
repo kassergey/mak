@@ -1,0 +1,6 @@
+*{
+    margin: 0px;
+}
+aside, article, section, header, footer, nav {
+    display: block;
+}

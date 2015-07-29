@@ -1,0 +1,406 @@
+/*main styles*/
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border-radius: 3px;
+    border: none;
+}
+html{
+    padding: 41px 0;
+    background: linear-gradient(to bottom, rgb(81, 139, 192), rgb(217, 236, 243));
+}
+body {
+    width: 888px;
+    border: 2px solid white;
+    background: linear-gradient(rgb(214, 235, 255), white, rgb(214, 235, 255));
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,1);
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 12px;
+}
+.clearFix{
+    clear: both;
+}
+.leftCol, .rightCol{
+    width: 210px;
+}
+.leftCol{
+    float: left;
+}
+.rightCol{
+    float: right;
+}
+.leftCol + article{
+    float: left;
+    margin: 0 7px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    display: inline-block;
+    padding: 0;
+}
+/*header styles*/
+header{
+    padding: 17px;
+}
+header p{
+    font-family: 'Gill Sans MT';
+    color: rgb(13, 11, 184);
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0px;
+}
+header p mark {
+  background-color: inherit;
+  color: rgb(22, 71, 103);
+}
+/*main navigation*/
+#mainNav{
+    position: static;
+}
+#mainNav ul li {
+    width: 100px;
+    height: 14px;
+    -webkit-border-top-left-radius: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: rgb(143, 197, 244);
+    text-align: center;
+    padding: 13px 0;
+    font-family: Arial;
+    font-size: small;
+}
+#mainNav ul li + #mainNav ul li{
+    margin-left: 3px;
+}
+#mainNav ul li a {
+    color: Black;
+    text-decoration: none;
+}
+#mainNav input, #mainNav button{
+    position: relative;
+    top: 5px;
+    float: right;
+    height: 20px;
+}
+#mainNav button{
+  /*background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e3e3e3);
+  background-image: -moz-linear-gradient(top, #ffffff, #e3e3e3);
+  background-image: -ms-linear-gradient(top, #ffffff, #e3e3e3);
+  background-image: -o-linear-gradient(top, #ffffff, #e3e3e3);
+  background-image: linear-gradient(to bottom, #ffffff, #e3e3e3);
+  font-family: Arial;
+  font-weight: bolder;
+  color: #136ba9;
+  padding: 3px 4px;
+  font-size: 10px;
+  text-decoration: none;*/
+  width: 58px;
+  background-image: url(img/searchButton.gif);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#searchInput{
+    height: 25px;
+    border-radius: 5px;
+}
+#mainNav hr{
+    height: 4px;
+    margin: 4px 0;
+    background-color: rgb(180, 219, 255);
+    border: none;
+}
+.selectedElement{
+    background-color: rgb(70, 104, 153) !important;
+}
+.selectedElement a{
+    color: White !important;
+}
+/*banner style*/
+#banner .leftCol, #banner .rightCol{
+    background-color: rgb(105, 155, 201);
+    height: 196px;
+    padding: 25px;
+    width: 160px;
+}
+#banner .leftCol{
+    -webkit-border-bottom-right-radius: 24px;
+    -moz-border-radius-bottomright: 24px;
+    border-bottom-right-radius: 24px;
+}
+#banner .rightCol{
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius-bottomleft: 24px;
+    border-bottom-left-radius: 24px;
+}
+#banner .leftCol p{
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(6, 33, 62);
+    margin-bottom: 15px;
+}
+#banner .leftCol ul{
+    list-style-type: none;
+}
+#banner .leftCol ul li{
+    margin-bottom: 5px;
+}
+#banner .leftCol ul li a{
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+#banner .rightCol p{
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(6, 33, 62);
+}
+#banner .rightCol label, #banner mark{
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    background:  none;
+}
+#banner .rightCol button{
+    background-image: url(img/login.gif);
+    height: 22px;
+    width: 73px;
+    float: right;
+    margin-top: 5px;
+}
+input[name="username"], input[name="pswrd"]{
+    max-width: 156px;
+}
+input[name="rememberMe"]{
+    float: left;
+    margin-left: -15px;
+}
+.rememberMe{
+    display: inline-block;
+    width: 50px;
+    padding-top: 5px;
+    float: left;
+    margin-left: 15px;
+}
+.lostpsswrd{
+    display: inline-block;
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+.regLink{
+    color: rgba(0,0,0,1);
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bolder;
+}
+.addReg{
+    padding-top: 10px;
+}
+/*additional navigation style*/
+#additionalNav{
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(243, 248, 252), rgb(221, 233, 241));
+}
+#additionalNav ul li{
+    font-family: Arial;
+    font-size: small;
+    margin-left: 20px;
+}
+#additionalNav ul li a {
+    color: Black;
+    text-decoration: none;
+}
+/*content style*/
+#content .rightCol, #content .leftCol{
+    padding: 25px;
+    width: 160px;
+    background-color: rgb(197, 222, 243);
+    height: 440px;
+}
+#content .rightCol{
+    border-top-left-radius: 24px;
+}
+#content .leftCol{
+    border-top-right-radius: 24px;
+}
+#content article {
+    background: linear-gradient(rgb(214, 235, 255), white);
+    padding: 35px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 383px;
+    height: 420px;
+}
+#content aside hr{
+    width: 210px;
+    margin: 35px 0 35px -25px;
+    border-bottom-color: white;
+    border-top-color: rgb(154, 198, 234);
+}
+#content .rightCol .head, #content .leftCol .head{
+    border-bottom: 1px solid rgb(105, 155, 201);
+    margin-bottom: 15px;
+    font-family: Arial;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+.head img{
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+.popular, .latestNews{
+    list-style-image: url("img/list-item.gif");
+}
+.popular a, .latestNews a{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(53, 63, 72);
+}
+.popular li, .latestNews li{
+    margin-bottom: 4px;
+}
+.popular a{
+    text-decoration: none;
+}
+#Polls button{
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+#Polls label{
+    position: relative;
+    left: 20px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(53, 63, 72);
+    margin-bottom: 5px;
+}
+#Polls input[type="radio"]{
+    margin-left: -20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#voteBtn{
+    background-image: url(img/vote.gif);
+    height: 22px;
+    width: 78px;
+}
+#ResultBtm{
+    background-image: url(img/result.bmp);
+    height: 22px;
+    width: 78px;
+}
+.thisJoomla{
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+}
+.guestCounter{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(20, 109, 172);
+}
+#countGuest{
+    background-color: inherit;
+    color: #ff0000;
+}
+.articleHead{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(22, 40, 78);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+}
+#officeOperation{
+    float: right;
+    padding: 5px;
+}
+#officeOperation a{
+    margin: 2px 5px;
+}
+.dataWritten{
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(15, 85, 157)
+}
+#content article hr{
+    height: 3px;
+    margin: 5px 0;
+    background-color: rgb(87, 163, 208);
+    border: none;
+}
+.descrComp{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(20, 109, 172);
+    margin: 20px 0px;
+}
+.newsBlock {
+    clear: both;
+    height: 120px;
+}
+.newsBlock img{
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.newsBlock a{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(53, 63, 72);
+    font-weight: bold;
+}
+.newsBlock p{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(53, 63, 72);
+}
+#readMore{
+    background-image: url(img/readMore.png);
+    height: 25px;
+    width: 95px;
+    float: left;
+}
+.lastUpdated{
+    font-size: 10px;
+    font-family: "Arial";
+    color: rgb(145, 165, 185);
+    float: right;
+    margin-top: 7px;
+}
+/*footer style*/
+footer{
+    text-align: center;
+    height: 90px;
+    padding-top: 4px;
+}
+footer p{
+    font-weight: bolder;
+    position: relative;
+    top: 35%;
+    color: rgb(19, 104, 169);
+    font-family: Arial;
+    font-size: small;
+}
+footer hr{
+    height: 4px;
+    margin: 4px 0;
+    background-color: rgb(66, 106, 147);
+    border: none;
+}
